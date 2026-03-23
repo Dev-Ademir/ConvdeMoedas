@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Conversor de Moedas</title>
+</head>
+
+<body>
+    <img class="logo" src="./assets/logo.gif" alt="logo-dev-club" id="logo" />
+
+    <main>
+
+        <label>
+            Converter de:
+            <select id="currency-from">
+                <option value="real">Real brasileiro</option>
+                <option value="dolar">Dólar americano</option>
+                <option value="bitcoin">Bitcoin</option>
+                <option value="euro">Euro</option>
+            </select>
+
+        </label>
+        <label>
+            Converter para:
+            <select id="currency-to">
+                <option value="dolar">Dólar americano</option>
+                <option value="euro">Euro</option>
+                <option value="bitcoin">Bitcoin</option>
+                <option value="real">Real brasileiro</option>
+            </select>
+
+        </label>
+        <label>
+            Valor:
+            <input class="input-currency" placeholder="Digite o valor">
+        </label>
+        <Button class="convert-button">Converter</Button>
+        <section>
+            <div class="currency-box">
+                <img class="currency-from-image" src="./assets/brasil.png" alt="Bandeira origem">
+                <p class="currency-from-name">Reais</p>
+                <p class="currency-value-to-convert">R$ 00,00</p>
+            </div>
+
+            <img class="arrow-img" src="./assets/Vector.png" alt="seta">
+
+            <div class="currency-box">
+                <img class="currency-image" src="./assets/usa.png" alt="Bandeira destino">
+                <p id="currency-name">Dólares</p>
+                <p class="currency-value">US$ 00,00</p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+<script src="script.js"></script>
+
+</html>
